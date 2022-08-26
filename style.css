@@ -1,0 +1,120 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: cursive;}
+
+    body{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(16, 30, 35);
+    }
+/*this container is the box with all the content*/
+    .container{
+        height: 500px;
+        width: 800px;
+        max-width: 80%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 50px;
+        box-shadow: 0 0 10px 2px;
+    }
+/*This is all the buttons*/
+    .btn-grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    #startPageHighscore, #startbtn{
+        display: inline-block;
+        padding: 20px 20px;
+        width: 200px;
+    }
+    #startpage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #a, #b , #c , #d , #startbtn, #startPageHighscore, #playAgain, #clearHighscore, #submitScore{
+        background-color: rgb(16, 30, 35);
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: white;
+        outline: black;
+    }
+    .button{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #startbtn:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #a:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #b:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #c:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #d:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #startPageHighscore:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #submitScore:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #playAgain:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+    #clearHighscore:hover{
+        border-color: black;
+        box-shadow: 4px 3px 6px rgb(16, 30, 35);
+    }
+
+ /**/
+
+  /*hide sections until they are shown via the click events*/
+    .hide{
+    display: none;  
+    } 
+
+    #highscoreContainer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+    #highscore-initials{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+    #highscore-score {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+}
